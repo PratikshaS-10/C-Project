@@ -24,3 +24,17 @@ It calculates a score, gives feedback, saves data securely, and even offers fun 
 2. Compile the C code:
    ```bash
    gcc mental_health_checker.c -o mental_health
+3. Run the code:
+   ./mental_health
+   If you're on Windows and using something like MinGW or TDM-GCC, the command will be:
+   mental_health.exe
+
+🧠 If Score Plotting Is Enabled
+The program uses a Python script named generate_chart.py to plot user scores. To enable this:
+
+1. Make sure Python is installed:
+python --version
+2. Install matplotlib (if not installed):
+pip install matplotlib
+3. Ensure the script generate_chart.py is in the same folder.
+The C program calls this script using system("python generate_chart.py");
